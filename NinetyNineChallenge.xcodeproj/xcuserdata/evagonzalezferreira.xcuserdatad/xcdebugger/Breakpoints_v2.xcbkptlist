@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "47FBA750-B45B-4C10-9275-AEC47721103A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F4E0476-CEB2-4382-B2D5-46D02AF0AC41"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NinetyNineChallenge/ViewModel/Favourites/Cell/FavouriteCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "viewModel"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FB9AE44-2BB1-4E26-B034-CCB97608E81E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NinetyNineChallenge/ViewModel/FavouriteDetails/FavouriteDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "updateUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2221C985-51C5-426C-B618-A3B6A931DAEC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NinetyNineChallenge/ViewModel/FavouriteDetails/FavouriteDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "favouriteDetailsFetched()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7C892BB-C8D9-4F91-8152-C1B92CDE91B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NinetyNineChallenge/ViewModel/FavouriteDetails/FavouriteDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E7C892BB-C8D9-4F91-8152-C1B92CDE91B2 - 6c2941e29c4ccecc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NinetyNineChallenge.FavouriteDetailsResponse, Swift.Error&gt;) -&gt; () in NinetyNineChallenge.FavouriteDetailsViewModel.viewDidLoad() -&gt; ()"
+                  moduleName = "NinetyNineChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evagonzalezferreira/PruebasTecnicas/NinetyNine/NinetyNineChallenge/NinetyNineChallenge/ViewModel/FavouriteDetails/FavouriteDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "158">
+               </Location>
+               <Location
+                  uuid = "E7C892BB-C8D9-4F91-8152-C1B92CDE91B2 - 6c2941e29c4ccecc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NinetyNineChallenge.FavouriteDetailsResponse, Swift.Error&gt;) -&gt; () in NinetyNineChallenge.FavouriteDetailsViewModel.viewDidLoad() -&gt; ()"
+                  moduleName = "NinetyNineChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evagonzalezferreira/PruebasTecnicas/NinetyNine/NinetyNineChallenge/NinetyNineChallenge/ViewModel/FavouriteDetails/FavouriteDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "191">
+               </Location>
+               <Location
+                  uuid = "E7C892BB-C8D9-4F91-8152-C1B92CDE91B2 - 6c2941e29c4ccecc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NinetyNineChallenge.FavouriteDetailsResponse, Swift.Error&gt;) -&gt; () in NinetyNineChallenge.FavouriteDetailsViewModel.viewDidLoad() -&gt; ()"
+                  moduleName = "NinetyNineChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evagonzalezferreira/PruebasTecnicas/NinetyNine/NinetyNineChallenge/NinetyNineChallenge/ViewModel/FavouriteDetails/FavouriteDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "883">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F208D642-6A41-4874-AD9C-0AF14F704052"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NinetyNineChallenge/DataManager/Remote/SessionAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "send(request:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F208D642-6A41-4874-AD9C-0AF14F704052 - 93356415850f60c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NinetyNineChallenge.SessionAPI.send&lt;A where A: NinetyNineChallenge.APIRequest&gt;(request: A, completion: (Swift.Result&lt;A.Response, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NinetyNineChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evagonzalezferreira/PruebasTecnicas/NinetyNine/NinetyNineChallenge/NinetyNineChallenge/DataManager/Remote/SessionAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "F208D642-6A41-4874-AD9C-0AF14F704052 - 5dcef9d8cc191e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in NinetyNineChallenge.SessionAPI.send&lt;A where A: NinetyNineChallenge.APIRequest&gt;(request: A, completion: (Swift.Result&lt;A.Response, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NinetyNineChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evagonzalezferreira/PruebasTecnicas/NinetyNine/NinetyNineChallenge/NinetyNineChallenge/DataManager/Remote/SessionAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "477">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
