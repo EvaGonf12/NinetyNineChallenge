@@ -1,4 +1,5 @@
 import Foundation
+import RxSwift
 
 class NinetyNineChallengeDataManager {
     let localDataManager: NinetyNineChallengeLocalDataManager
@@ -11,13 +12,13 @@ class NinetyNineChallengeDataManager {
 }
 
 extension NinetyNineChallengeDataManager: FavouritesDataManager {
-    func fetchAllFavourites(completion: @escaping (Result<ListFavouritesResponse, Error>) -> ()) {
-        self.remoteDataManager.fetchFavourites(completion: completion)
+    func fetchFavourites() -> (Observable<[String]>) {
+        return self.remoteDataManager.fetchFavourites()
     }
 }
 
 extension NinetyNineChallengeDataManager: FavouriteDetailsDataManager {
-    func fetchFavourite(id: String, completion: @escaping (Result<FavouriteDetailsResponse, Error>) -> ()) {
-        self.remoteDataManager.fetchFavourite(id: id, completion: completion)
-    }   
+    func fetchFavourite(id: String) -> Observable<FavouriteDetailsResponse> {
+        return self.remoteDataManager.fetchFavourite(id: id)
+    }
 }

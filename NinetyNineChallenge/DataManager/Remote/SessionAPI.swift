@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 enum SessionAPIError: Error {
-    case emptyData
+    case dataError
 }
 
 final class SessionAPI {
@@ -18,15 +18,14 @@ final class SessionAPI {
         
         let task = session.dataTask(with: request) { data, response, error in
             do {
-                if let data = data,
-                   data.count > 0 {
+                if let data = data {
                     let model = try JSONDecoder().decode(T.Response.self, from: data)
                     DispatchQueue.main.async {
                         completion(.success(model))
                     }
                 } else {
                     DispatchQueue.main.async {
-                        completion(.failure(SessionAPIError.emptyData))
+                        completion(.failure(SessionAPIError.dataError))
                     }
                 }
             } catch {

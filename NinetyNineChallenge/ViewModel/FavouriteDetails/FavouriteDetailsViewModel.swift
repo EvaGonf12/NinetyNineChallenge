@@ -1,5 +1,5 @@
 import Foundation
-
+import RxSwift
 
 protocol FavouriteDetailsCoordinatorDelegate: class {
     func favouriteDetailaBackButtonTapped()
@@ -22,6 +22,8 @@ class FavouriteDetailsViewModel {
     let favouriteDetailsDataManager: FavouriteDetailsDataManager
     let favId: String
     
+    private var disposeBag = DisposeBag()
+
     init(favId: String, favouriteDetailsDataManager: FavouriteDetailsDataManager) {
         self.title = "Fav Details"
         self.favId = favId
@@ -29,18 +31,22 @@ class FavouriteDetailsViewModel {
     }
     
     func viewDidLoad() {
-        self.favouriteDetailsDataManager.fetchFavourite(id: self.favId, completion: {[weak self] result in
-            switch result {
-                case .failure(let error):
-                    self?.viewDelegate?.errorFetchingFavouriteDetails(error: error.localizedDescription)
-                case .success(let favDetails):
-                    self?.name = favDetails.name
-                    self?.hot = favDetails.hot
-                    self?.ricCode = favDetails.ricCode
-                    self?.category = favDetails.category
-                    self?.viewDelegate?.favouriteDetailsFetched()
-            }
-        })
+        self.getFavouriteDetails()
+    }
+        
+    fileprivate func getFavouriteDetails() {
+        return self.favouriteDetailsDataManager.fetchFavourite(id: self.favId)
+            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
+            .subscribe { [weak self] favDetails in
+                self?.name = favDetails.name
+                self?.hot = favDetails.hot
+                self?.ricCode = favDetails.ricCode
+                self?.category = favDetails.category
+                self?.viewDelegate?.favouriteDetailsFetched()
+            } onError: { [weak self] error in
+                self?.viewDelegate?.errorFetchingFavouriteDetails(error: error.localizedDescription)
+            } onCompleted: {}.disposed(by: disposeBag)
     }
     
     func backButtonTapped() {
@@ -50,4 +56,5 @@ class FavouriteDetailsViewModel {
     func alertDismiss() {
         self.coordinatorDelegate?.favouriteDetailaBackButtonTapped()
     }
+
 }

@@ -39,9 +39,14 @@
 		589C2CEA256C6DE20082F47F /* FavouriteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C2CE9256C6DE20082F47F /* FavouriteDetailsViewModel.swift */; };
 		589C2CF0256D9AB20082F47F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C2CEF256D9AB20082F47F /* Coordinator.swift */; };
 		589C2CF5256D9E6D0082F47F /* FavouriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C2CF4256D9E6D0082F47F /* FavouriteDetailViewController.swift */; };
+		589C2CFC256DC3390082F47F /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C2CFB256DC3390082F47F /* Favourite.swift */; };
+		589C2D01256DC3570082F47F /* ListFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C2D00256DC3570082F47F /* ListFavourites.swift */; };
+		E7FE79C8D1EAE30250167F75 /* Pods_NinetyNineChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23A249D7B68AF125A3AF94F /* Pods_NinetyNineChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DC8EDC7055233C0823F1602 /* Pods-NinetyNineChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinetyNineChallenge.release.xcconfig"; path = "Target Support Files/Pods-NinetyNineChallenge/Pods-NinetyNineChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		566CF29B94690FC85A92F70F /* Pods-NinetyNineChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinetyNineChallenge.debug.xcconfig"; path = "Target Support Files/Pods-NinetyNineChallenge/Pods-NinetyNineChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		589C2C2A256C4F470082F47F /* NinetyNineChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinetyNineChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589C2C2D256C4F470082F47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		589C2C2F256C4F470082F47F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +81,9 @@
 		589C2CE9256C6DE20082F47F /* FavouriteDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteDetailsViewModel.swift; sourceTree = "<group>"; };
 		589C2CEF256D9AB20082F47F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		589C2CF4256D9E6D0082F47F /* FavouriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteDetailViewController.swift; sourceTree = "<group>"; };
+		589C2CFB256DC3390082F47F /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
+		589C2D00256DC3570082F47F /* ListFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavourites.swift; sourceTree = "<group>"; };
+		D23A249D7B68AF125A3AF94F /* Pods_NinetyNineChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NinetyNineChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FE79C8D1EAE30250167F75 /* Pods_NinetyNineChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +103,8 @@
 			children = (
 				589C2C2C256C4F470082F47F /* NinetyNineChallenge */,
 				589C2C2B256C4F470082F47F /* Products */,
+				E74F49565C143B66C195BCC9 /* Pods */,
+				5A2B935C985C678DA22309AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +243,7 @@
 		589C2CA1256C576F0082F47F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				589C2CFA256DC3260082F47F /* Entities */,
 				589C2CA2256C577B0082F47F /* Responses */,
 				589C2CA3256C578A0082F47F /* Requests */,
 			);
@@ -305,6 +317,32 @@
 			path = FavouriteDetails;
 			sourceTree = "<group>";
 		};
+		589C2CFA256DC3260082F47F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				589C2CFB256DC3390082F47F /* Favourite.swift */,
+				589C2D00256DC3570082F47F /* ListFavourites.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5A2B935C985C678DA22309AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D23A249D7B68AF125A3AF94F /* Pods_NinetyNineChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E74F49565C143B66C195BCC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				566CF29B94690FC85A92F70F /* Pods-NinetyNineChallenge.debug.xcconfig */,
+				0DC8EDC7055233C0823F1602 /* Pods-NinetyNineChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,9 +350,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 589C2C57256C4F4A0082F47F /* Build configuration list for PBXNativeTarget "NinetyNineChallenge" */;
 			buildPhases = (
+				47E7B3DD0A87CA907BEF4CF0 /* [CP] Check Pods Manifest.lock */,
 				589C2C26256C4F470082F47F /* Sources */,
 				589C2C27256C4F470082F47F /* Frameworks */,
 				589C2C28256C4F470082F47F /* Resources */,
+				746CECC4DC1B9D27EB9FF0EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,6 +409,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47E7B3DD0A87CA907BEF4CF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NinetyNineChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		746CECC4DC1B9D27EB9FF0EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NinetyNineChallenge/Pods-NinetyNineChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NinetyNineChallenge/Pods-NinetyNineChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NinetyNineChallenge/Pods-NinetyNineChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		589C2C26256C4F470082F47F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -388,10 +470,12 @@
 				589C2CC9256C63070082F47F /* FavouritesDataManager.swift in Sources */,
 				589C2CEA256C6DE20082F47F /* FavouriteDetailsViewModel.swift in Sources */,
 				589C2C9B256C56F00082F47F /* NinetyNineChallengeRemoteDataManager.swift in Sources */,
+				589C2CFC256DC3390082F47F /* Favourite.swift in Sources */,
 				589C2CDF256C6A8D0082F47F /* FavouriteCell.swift in Sources */,
 				589C2CD0256C64620082F47F /* FavouritesViewController.swift in Sources */,
 				589C2CDB256C68470082F47F /* FavouriteCellViewModel.swift in Sources */,
 				589C2CE6256C6D9B0082F47F /* FavouriteDetailsDataManager.swift in Sources */,
+				589C2D01256DC3570082F47F /* ListFavourites.swift in Sources */,
 				589C2CB7256C5F530082F47F /* ListFavouritesResponse.swift in Sources */,
 				589C2CF0256D9AB20082F47F /* Coordinator.swift in Sources */,
 				589C2C96256C56BF0082F47F /* NinetyNineChallengeLocalDataManagerImp.swift in Sources */,
@@ -528,6 +612,7 @@
 		};
 		589C2C58256C4F4A0082F47F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 566CF29B94690FC85A92F70F /* Pods-NinetyNineChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,6 +633,7 @@
 		};
 		589C2C59256C4F4A0082F47F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC8EDC7055233C0823F1602 /* Pods-NinetyNineChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,9 +1,9 @@
 import Foundation
 
 struct ListFavouritesResponse: Codable {
-    var result : [String]
+    var listFavourites : [String]
     
     enum CodingKeys: String, CodingKey {
-        case result
+        case listFavourites = "result"
     }
 }

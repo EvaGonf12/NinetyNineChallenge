@@ -1,6 +1,7 @@
 import Foundation
+import RxSwift
 
 protocol NinetyNineChallengeRemoteDataManager {
-    func fetchFavourites(completion: @escaping (Result<ListFavouritesResponse, Error>) -> ())
-    func fetchFavourite(id: String, completion: @escaping (Result<FavouriteDetailsResponse, Error>) -> ())
+    func fetchFavourites() -> (Observable<[String]>)
+    func fetchFavourite(id: String) -> (Observable<FavouriteDetailsResponse>)
 }

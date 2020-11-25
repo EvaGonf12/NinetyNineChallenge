@@ -1,10 +1,11 @@
 import Foundation
+import RxSwift
 
 enum FavouritesDataManagerError: Error {
     case unknown
 }
 
 protocol FavouritesDataManager {
-    func fetchAllFavourites(completion: @escaping (Result<ListFavouritesResponse, Error>) -> ())
+    func fetchFavourites() -> (Observable<[String]>)
 }
 

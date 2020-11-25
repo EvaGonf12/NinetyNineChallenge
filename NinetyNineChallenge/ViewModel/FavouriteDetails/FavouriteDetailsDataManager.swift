@@ -1,5 +1,6 @@
 import Foundation
+import RxSwift
 
 protocol FavouriteDetailsDataManager {
-    func fetchFavourite(id: String, completion: @escaping (Result<FavouriteDetailsResponse, Error>) -> ())
+    func fetchFavourite(id: String) -> Observable<FavouriteDetailsResponse>
 }

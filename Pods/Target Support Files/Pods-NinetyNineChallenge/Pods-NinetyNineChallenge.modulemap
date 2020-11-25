@@ -1,0 +1,6 @@
+framework module Pods_NinetyNineChallenge {
+  umbrella header "Pods-NinetyNineChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
